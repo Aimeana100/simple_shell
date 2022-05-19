@@ -20,8 +20,7 @@ char *convert_n(size_t nerrors)
 	if (newstr == NULL)
 		return (NULL);
 	newstr[len] = '\0';
-	do
-	{
+	do {
 		newstr[--len] = base[number % 10];
 		number /= 10;
 	} while (number != 0);
